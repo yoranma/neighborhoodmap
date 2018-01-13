@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width">
+	<title>街区地图</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+   
+	<nav class="menulist">
+		
+		<input class="filterInput" type="text" data-bind="textInput:filterInput" placeholder="请搜索......">
+		<ul data-bind="foreach:filteredList">
+			<li data-bind="text:name,click:$parent.listClick"></li>
+		</ul>
+	</nav>
+<div id="amap" class="amap"></div>
+<script src='js/knockout-3.4.2.js'></script>
+<script src='js/jquery-3.2.1.min.js'></script>
+<script defer='defer' src='js/main.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoxcb6Blia9PD7RWVuvsndj5R_Xzf2hCY&callback=init"  onerror="getError()"></script>
+</body>
+</html>
