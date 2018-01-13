@@ -8,18 +8,16 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-   
 	<nav class="menulist">
-		
 		<input class="filterInput" type="text" data-bind="textInput:filterInput" placeholder="请搜索......">
 		<ul data-bind="foreach:filteredList">
 			<li data-bind="text:name,click:$parent.listClick"></li>
 		</ul>
 	</nav>
-<div id="amap" class="amap"></div>
-<script src='js/knockout-3.4.2.js'></script>
-<script src='js/jquery-3.2.1.min.js'></script>
-<script defer='defer' src='js/main.js'></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoxcb6Blia9PD7RWVuvsndj5R_Xzf2hCY&callback=init"  onerror="getError()"></script>
+	<div id="amap" class="amap"></div>
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src='js/jquery-3.2.1.min.js'></script>
+	<script defer='defer' src='js/main.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoxcb6Blia9PD7RWVuvsndj5R_Xzf2hCY&callback=init"  onerror="getError()"></script>
 </body>
 </html>
