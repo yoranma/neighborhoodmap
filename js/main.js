@@ -68,7 +68,7 @@ var place = function(data){
 		$.ajax({
 			url:apiUrl+"newyork",
 			dataType:"json",
-			timeout:500
+			timeout:10000
 		}).done(function(data){
 			hintwindow.setContent(data.response.docs[0].snippet);
 			hintwindow.open(amap,self.marker);
