@@ -36,6 +36,19 @@ body{
 	border-radius:5px;
 }
 
+@media screen and (max-width:800px){
+	.menulist{
+	   width:0%;
+	   display:none;
+	}
+	.amap{
+		width:100%;
+		margin-top:5px;
+		margin-left:5px;
+		margin-right:5px;
+	}
+}
+
 @media screen and (max-device-width:480px){
 	.menulist{
 	   width:0%;
