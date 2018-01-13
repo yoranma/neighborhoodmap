@@ -1,63 +1,67 @@
-
-body{
-	background-color:grey;
-	width:100%;
+html,
+body {
+	background-color: grey;
+	width: 100%;
+	height: 100%;
 }
 
-.filterInput{
-	height:30px;
-	width:92%;
-	margin-left:5px;
-	margin-top:5px;
-	border-radius:5px;
-	text-indent:3px;
-	font-size:12pt;
+.main {	
+	transition: margin-left .5s;
+	padding: 16px;
+	height: 100%;
 }
 
-.menulist{
-	background-color:#fff;	
-	width:20%;
-	border-radius:5px;
+.amap {
+	height: 100%;
+	border-radius: 5px;
 }
 
-.menulist li{
-	cursor:pointer;
-	list-style:none;
-	height:28px;
-	margin-left:-15px;
+.menulist {
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -300px;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-.amap{	
-	width:78%;
-	height:640px;
-	margin-left:21%;
-	margin-right:5%;
-	margin-top:-270px;
-	border-radius:5px;
+.close-btn {
+	float: right;
 }
 
-@media screen and (max-width:800px){
-	.menulist{
-	   width:0%;
-	   display:none;
-	}
-	.amap{
-		width:100%;
-		margin-top:5px;
-		margin-left:5px;
-		margin-right:5px;
-	}
+.close-btn,
+.open-btn {
+	background-color: black;
+	color: white;
+	border-radius: 3px;
+	border-style: none;
+	margin-bottom: 10px;
 }
 
-@media screen and (max-device-width:480px){
-	.menulist{
-	   width:0%;
-	   display:none;
-	}
-	.amap{
-		width:100%;
-		margin-top:5px;
-		margin-left:5px;
-		margin-right:5px;
-	}
+.filterInput {
+	height: 30px;
+	width: 92%;
+	margin-left: 5px;
+	margin-top: 20px;
+	border-radius: 5px;
+	text-indent: 3px;
+	font-size: 12pt;
 }
+
+li {
+	cursor: pointer;
+	list-style: none;
+	height: 28px;
+	margin-left:20px;
+}
+
+ul {
+	padding: 0;
+}
+
+
+

@@ -1,0 +1,31 @@
+//地点数据
+var places = [{
+	coordinate:{lat:39.94803415234327,lng:116.41726000000001},
+	name:"雍和宫",
+	findingText:"雍和宫"
+},{
+	coordinate:{lat:39.909633589766806,lng:116.39739},
+	name:"天安门",
+	findingText:"天安门"
+},
+{
+	coordinate:{lat:39.8816345831529,lng:116.41048999999997},
+	name:"天坛公园",
+	findingText:"天坛公园"
+},{
+	coordinate:{lat:39.91987433512097,lng:116.3063},
+	name:"中央广播电视塔",
+	findingText:"中央广播电视塔"
+},{
+	coordinate:{lat:39.939304209018424,lng:116.33917000000001},
+	name:"北京动物园",
+	findingText:"北京动物园"
+},{
+	coordinate:{lat:39.94614317730954,lng:116.32403},
+	name:"国家图书馆",
+	findingText:"国家图书馆"
+},{
+	coordinate:{lat:39.97238399420861,lng:116.35592000000001},
+	name:"北京电影学院",
+	findingText:"北京电影学院"
+}];
